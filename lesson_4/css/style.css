@@ -1,0 +1,112 @@
+/* Reset style */
+@import url('reset.css');
+
+/*main style*/
+
+
+.header {}
+
+.menu {}
+
+.menu-list {}
+
+.logo {}
+
+.link {
+    color: rgb(120, 0, 232);
+}
+
+.menu ul li a {
+    color: blue;
+}
+
+
+
+/* MAIN =================================================================================================== */
+.page {}
+
+p,
+li {
+    color: yellowgreen;
+}
+
+.link-up {
+    color: rgb(8, 143, 4);
+}
+
+/* brain--------------------------------------------------------------------------- */
+
+.brain-human {}
+
+.title {
+    color: red;
+}
+
+h1 {
+    color: green;
+    /* нижчий пріорітет ніж у класа↑*/
+}
+
+h3 {
+    color: rgb(161, 105, 0);
+}
+
+.brain-list li {
+    color: rgb(15, 131, 131);
+}
+
+.text {}
+
+
+/* Learning------------------------------------------------------------------------- */
+
+.human-learning {}
+
+.title-learning {
+    color: red;
+}
+
+.learning-list p {
+    color: blue;
+    /* Пріоріттний */
+}
+
+.learning-text {
+    color: brown;
+}
+
+/* Motivation-------------------------------------------------------------------------- */
+
+.motivation-it {}
+
+.motivation-title {
+    color: red;
+}
+
+.motivation-list {}
+
+.motivation-list li>h3 {
+    color: rgb(76, 0, 255);
+}
+
+.motivation-text {
+    color: rgb(94, 118, 71);
+}
+
+/*FOOTER  ========================================================================================================== */
+
+.footer {}
+
+.footer-container {}
+
+.footer-text {
+    color: cadetblue;
+}
+
+.footer-link {
+    color: rgb(132, 0, 255);
+}
+
+.footer-link a {
+    color: rgb(196, 97, 5);
+}
