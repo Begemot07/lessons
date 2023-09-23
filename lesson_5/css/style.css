@@ -1,0 +1,216 @@
+/* import fonts  */
+
+@import url('https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:regular,600,700&display=swap');
+
+/*Hand Made fonts*/
+@import url("fonts.css");
+
+/* Reset style */
+@import url('reset.css');
+
+/*main style*/
+
+body {
+    font-family: "Inter";
+    font-size: 18px;
+}
+
+.wrapper {}
+
+.header {}
+
+.header-title {
+    text-align: left;
+    font-size: 24px;
+    color: orange;
+    text-indent: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.menu {}
+
+.logo {}
+
+.menu-list {}
+
+.menu-link {
+    color: yellowgreen;
+    text-decoration: underline;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+/* =================================================================================== */
+
+.page {}
+
+.up {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: blueviolet;
+    text-decoration: underline;
+    line-height: 2;
+}
+
+.more-link {
+    font-style: italic;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 2px 6px #000000;
+}
+
+/* --------------------------------------------------------------------------------------- */
+
+.start-sale {}
+
+.start-title {
+    font-family: "Poppins";
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(15, 177, 0);
+    text-shadow: -6px -29px 9px #000000;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+.start-image {}
+
+.start-text {
+    color: rgb(66, 66, 66);
+    line-height: 1.27;
+}
+
+.start-text span {
+    text-decoration: underline;
+    color: orange;
+
+}
+
+.start-history-list {}
+
+.history-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(40, 80, 82);
+    text-shadow: 10px 6px 70px #023311;
+    text-transform: capitalize;
+    line-height: 1.5;
+    letter-spacing: 4px;
+}
+
+.history-text {
+    color: rgb(9, 46, 30);
+    line-height: 1.27;
+}
+
+.modern-sale {}
+
+.modern-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: rgb(228, 253, 3);
+    text-shadow: 0px 0px 20px #023311;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 2;
+    letter-spacing: 3px;
+}
+
+.modern-text span {
+    text-decoration: line-through;
+}
+
+.modern-text {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.27;
+    font-family: "Causten";
+    color: rgba(14, 112, 112, 0.9);
+    text-shadow: 0px 0px 1px #8b8787;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+.why {}
+
+.why-block {}
+
+.why-title {
+    color: #37393F;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.27;
+}
+
+.why-text {
+    color: #7D7D7D;
+    line-height: 1.46;
+}
+
+.small {}
+
+.why-blok-title {
+    color: #6B77E5;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.27;
+}
+
+.why-blok-text {
+    color: #7D7D7D;
+    line-height: 1.46;
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+.project {
+    color: #7D7D7D;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 1.46;
+}
+
+.project-title {
+    color: #37393F;
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.27;
+}
+
+.project-text {}
+
+.project-list {
+    font-weight: 500;
+    text-indent: 16px;
+}
+
+/* ==================================================================================== */
+
+.footer {}
+
+.copy {}
+
+.footer-text {
+    color: #03922e;
+    text-align: center;
+    font-weight: 700;
+}
+
+.footer-text span {
+    text-decoration: line-through;
+    color: #000000;
+}
+
+.footer-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
