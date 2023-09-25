@@ -181,7 +181,7 @@ body {
 .benefits-block {
     display: inline-block;
     margin-left: 15px;
-    width: 44%;
+    max-width: 44%;
 }
 
 .benefits-title {
