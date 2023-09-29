@@ -230,7 +230,7 @@ body {
 /* ----------------------------clothing------------------------------------- */
 
 .clothing-block {
-    max-width: 1249px;
+    max-width: 1270px;
     padding: 0 15px;
     margin: 0 auto;
     font-family: 'Causten';
@@ -264,7 +264,8 @@ body {
 }
 
 .clothing-block-container {
-    padding-left: 15px;
+        padding: 0 5px 0 15px;
+
 }
 
 .clothing-subtitle {
