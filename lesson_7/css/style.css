@@ -215,16 +215,34 @@ body {
     padding-bottom: 35px;
 }
 
+.img-wrap {
+    border: 1px solid #000;
+    border-radius: 90px;
+    width: 180px;
+    height: 329px;
+    display: inline-block;
+    margin-right: 30px;
+}
+
 .woman {
-    margin-right: 20px;
     font-size: 0;
     vertical-align: middle;
+    margin: 11px 0px 0px -11px;
 
 }
 
+.img-wrap-big {
+    border: 1px solid #000;
+    border-radius: 155px;
+    width: 308px;
+    height: 506px;
+    display: inline-block;
+}
 
 .woman-big {
     vertical-align: middle;
+    margin: 20px 0px 0px -13px;
+
 }
 
 /* ----------------------------clothing------------------------------------- */
@@ -264,8 +282,7 @@ body {
 }
 
 .clothing-block-container {
-        padding: 0 5px 0 15px;
-
+    padding: 0 5px 0 15px;
 }
 
 .clothing-subtitle {
