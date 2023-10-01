@@ -159,6 +159,10 @@ body {
 .block-title {
     margin-bottom: 13px;
 }
+.information-text,
+.list-items {
+    margin-bottom: 35px;
+}
 
 .information-text p,
 .list-items li {
