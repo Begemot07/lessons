@@ -412,9 +412,7 @@ body {
 
 /* ========================================================================= */
 
-.footer {
-    max-height: 80px;
-}
+.footer {}
 
 .footer-block {
     text-align: center;
