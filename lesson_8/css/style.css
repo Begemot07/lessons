@@ -14,7 +14,7 @@ body {
 
 .wrapper {
     background: radial-gradient(circle, rgba(245, 245, 245, 0) 47%, rgba(0, 0, 0, 0.5495448179271709) 100%);
-
+    margin-bottom: 50px;
 }
 
 .up {
@@ -28,7 +28,7 @@ body {
 /* ===================HEADER=========================== */
 .header {
     border-bottom: 1px solid #050404;
-    margin-bottom: 50px;
+    
 }
 
 .header-container {
