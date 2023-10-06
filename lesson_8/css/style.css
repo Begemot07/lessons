@@ -1,0 +1,607 @@
+/* import fonts  ------*/
+
+/*Hand Made fonts----------------------*/
+@import url('fonts.css');
+/* Reset style */
+@import url("reset.css");
+
+/*main style==================================================================================*/
+
+body {
+    font-family: "Inter";
+    font-size: 18px;
+}
+
+.wrapper {
+    background: radial-gradient(circle, rgba(245, 245, 245, 0) 47%, rgba(0, 0, 0, 0.5495448179271709) 100%);
+
+}
+
+.up {
+    /* display: inline-block; */
+    width: 100%;
+    height: 50px;
+    background: url("../img/arrow-circle-up.svg")0px 0px /50px 50px space;
+    margin-bottom: 30px;
+}
+
+/* ===================HEADER=========================== */
+.header {
+    border-bottom: 1px solid #050404;
+    margin-bottom: 50px;
+}
+
+.header-container {
+    max-width: 1248px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.menu {
+    min-height: 70px;
+    background:
+        linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
+        url('../img/logo.png')1% 50% / auto no-repeat;
+}
+
+.menu-list {
+    display: inline-block;
+    padding-left: 450px;
+}
+
+.menu-list li {
+    display: inline-block;
+    margin-right: 42px;
+}
+
+.menu-link {
+    font-size: 18px;
+    display: inline-block;
+    text-transform: capitalize;
+    color: #ffffff;
+    line-height: 1.27;
+    padding: 35px 5px;
+}
+
+.menu-link-hidden {
+    /* opacity: 0.3; */
+    /* color: #40DDB6; */
+}
+
+/* ===============================MAIN======================================= */
+
+
+.page {
+    margin-bottom: 70px;
+}
+
+/* [class*='-'] {
+    background: #ca7373;
+} */
+
+/* --------------background-color------------------- */
+
+.page-container {
+    max-width: 1248px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 50px;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.3842787114845938) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.bg-color {
+    padding: 20px 15px;
+    background-color: rgba(0, 0, 0, 0.199);
+    margin-bottom: 100px;
+}
+
+.bg-color-title {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.5;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 1) 0%, rgba(18, 18, 0, 0) 100%, rgba(0, 178, 235, 1) 100%, rgba(5, 190, 255, 1) 100%);
+}
+
+.bg-color p {
+    line-height: 1.7;
+    padding: 20px 15px;
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.199);
+
+}
+
+.bg-color span {
+    border-radius: 5px;
+    font-weight: 700;
+    border-left: 9px solid #0707077a;
+    border-right: 9px solid #00000038;
+    border-top: 6px solid #4a4a4b;
+    border-bottom: 6px solid #131211;
+}
+
+.bg-color .name-color {
+    padding: 5px 10px;
+    color: rgb(247, 247, 250);
+    background-color: rgba(10, 10, 10, 0.315);
+
+}
+
+/* -------------------------background-image------------------------ */
+.bg-image {
+    margin-bottom: 100px;
+}
+
+.bg-image p {
+    line-height: 1.7;
+    padding: 20px 15px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.bg-image span {
+    background: radial-gradient(circle, rgba(245, 245, 245, 0) 47%, rgba(0, 0, 0, 0.5495448179271709) 100%);
+    font-weight: 700;
+}
+
+.bg-color-title {}
+
+.bg-image-item h3 {
+    display: inline-block;
+    color: #000000;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 auto;
+    line-height: 1.3;
+    background-color: #fff;
+    padding: 10px 15px;
+}
+
+
+
+
+.bg-image-item {
+    border: 1px solid #000;
+    min-height: 250px;
+    padding: 25px;
+    background-image: url('../img/fractal-02.jpg');
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+    background-position: 370px 0px;
+}
+
+
+/* -----------------------background general------------------------- */
+
+.bg-general {
+    margin-bottom: 100px;
+    padding: 20px;
+    background:
+        linear-gradient(90deg, rgba(0, 0, 0, 0.8)0%, rgba(0, 0, 0, 0.8) 10%0),
+        url('../img/fractal-03.jpg') fixed;
+}
+
+.bg-general p {
+    color: #fff;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.bg-color-title {
+    color: #fff;
+}
+
+.bg-general-list {
+    margin-bottom: 30px;
+    padding-left: 30px;
+}
+
+.bg-general-list li {
+    margin-bottom: 20px;
+    color: #fff;
+    line-height: 1.6;
+    padding-left: 35px;
+    min-height: 30px;
+    background: url('../img/mark-list.svg')0 0px no-repeat;
+}
+
+
+/* ------------------------ */
+
+.bg-image-box h2 {
+    font-size: 36px;
+    text-align: center;
+    padding: 50px 0;
+    font-weight: 700;
+    color: #fff;
+    background:
+        linear-gradient(90deg, rgba(0, 0, 0, 0.8)0%, rgba(0, 0, 0, 0.8) 10%0),
+        url('../img/fractal-01.jpg') fixed;
+}
+
+.bg-image-box {
+    margin-bottom: 100px;
+    border: 1px solid #000;
+    padding: 30px;
+    min-height: 1000px;
+    background:
+        linear-gradient(90deg, rgba(114, 87, 87, 0.308) 0%, rgba(255, 255, 255, 0.30220588235294112) 100%),
+        url('../img/earth.png') no-repeat,
+        url('../img/earth.png')200px 200px no-repeat fixed,
+        url('../img/earth.png')400px 400px /330px no-repeat;
+}
+
+/* background: red url("#") 0 0 / cover no-repeat; */
+
+/* ---------------------\\\\\\\\\\\\\\\\from makets//////////////------------------- */
+
+.fashion-container {
+    max-width: 1270px;
+    padding: 0 15px;
+    margin: 0 auto 100px;
+}
+
+.fashion-text-block {
+    padding: 183px 74px 158px 74px;
+    background:
+        linear-gradient(90deg, rgba(0, 0, 0, 0.2)0%, rgba(0, 0, 0, 0.2) 10%),
+        url('../img/makets/grace.jpg') 0 0 / cover no-repeat;
+    display: inline-block;
+    font-size: 0;
+    margin: 0px -5px 0px 0px;
+}
+
+.fashion-text-block p {
+    font-family: "Causten";
+    max-width: 466px;
+    font-weight: 300;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+
+.fashion-title {
+    max-width: 466px;
+    color: #FFF;
+    font-family: "CoreSansC";
+    font-size: 34px;
+    font-weight: 750;
+    line-height: 1.47;
+    letter-spacing: 0.208px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.fashion-button a {
+    font-family: "Causten";
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1.22;
+    color: #3C4242;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 12px 44px;
+    border-radius: 8px;
+    background: #FFF;
+}
+
+.fashion-image-block {
+    vertical-align: bottom;
+    display: inline-block;
+    width: 625px;
+    min-height: 639px;
+    background: url("../img/makets/people.jpg") 0 0 / cover no-repeat;
+}
+
+/* --------------------------clothing------------------------------- */
+
+.clothing-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 15px 0 21px;
+    background: url("../img/makets/violet-rect.png") no-repeat;
+}
+
+.clothing-container p {
+    margin-bottom: 20px;
+    color: #807D7E;
+    font-family: "Causten";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.67;
+    letter-spacing: 0.4px;
+}
+
+.clothing-container span {
+    font-family: "CoreSansC";
+    font-weight: 600;
+
+}
+
+.clothing-title {
+    color: #3C4242;
+    font-family: "CoreSansC";
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.56px;
+    margin-bottom: 30px;
+    min-height: 33px;
+}
+
+.clothing-subtitle {
+    color: #807D7E;
+    font-family: "CoreSansC";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.67;
+    letter-spacing: 0.4px;
+    margin-bottom: 25px;
+}
+
+.clothing-button {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+
+
+/* ---------------------------------- */
+
+.discover-container {
+    max-width: 1250px;
+    margin: 0 auto 100px;
+    padding: 0 15px;
+}
+
+
+.discover-text-block {
+    max-width: 852px;
+    padding: 0 15px;
+    margin: 0 auto 47px;
+    text-align: center;
+}
+
+.discover-text-block p {
+    color: #7D7D7D;
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.46;
+}
+
+.discover-text-subtitle {
+    text-transform: capitalize;
+    display: inline-block;
+    line-height: 1.22;
+    padding-left: 18px;
+    color: #37393F;
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 14px;
+    background: url('../img/makets/green-rect.png')0 5px no-repeat;
+}
+
+.discover-text-title {
+    color: #37393F;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.21;
+    margin-bottom: 14px;
+}
+
+.discover-galery-block {}
+
+.discover-galery-line {
+    margin-bottom: 58px;
+
+}
+
+.discover-galery-items {
+    margin-right: 19px;
+    display: inline-block;
+    margin-bottom: 19px;
+}
+
+.discover-galery-items p {
+    color: #7D7D7D;
+    min-height: 21px;
+    font-size: 14px;
+    line-height: 1.46;
+    padding-left: 25px;
+    background: url("../img/makets/discoer/calendar-icon.svg") no-repeat;
+}
+
+.discover-image-financial {
+    width: 384px;
+    height: 501px;
+    margin-bottom: 24px;
+    background: url("../img/makets/discoer/photo-01.jpg") no-repeat;
+}
+
+.discover-galery-title {
+    margin-bottom: 10px;
+    color: #37393F;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.27;
+}
+
+.discover-image-marketing {
+    width: 384px;
+    height: 501px;
+    margin-bottom: 24px;
+    background: url("../img/makets/discoer/photo-02.jpg") no-repeat;
+}
+
+.discover-image-business {
+    width: 384px;
+    height: 501px;
+    margin-bottom: 24px;
+    background: url("../img/makets/discoer/photo-03.jpg") no-repeat;
+}
+
+.discover-image-investment {
+    width: 384px;
+    height: 501px;
+    margin-bottom: 24px;
+    background: url("../img/makets/discoer/photo-04.jpg") no-repeat;
+}
+
+.discover-image-development {
+    width: 384px;
+    height: 501px;
+    margin-bottom: 24px;
+    background: url("../img/makets/discoer/photo-05.jpg") no-repeat;
+}
+
+.discover-image-finivest {
+    width: 384px;
+    height: 501px;
+    margin-bottom: 24px;
+    background: url("../img/makets/discoer/photo-06.jpg") no-repeat;
+}
+
+
+/* ----------------------CARE--------------------------------------------------- */
+
+.care-container {
+    max-width: 703px;
+    padding: 0 15px;
+    margin: 0 auto 100px;
+}
+
+.care-text {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.care-container p {
+    color: #7D7D7D;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.46;
+    margin-bottom: 15px;
+}
+
+.care-title {
+    text-align: left;
+    max-width: 413px;
+
+}
+
+.discover-text-title {}
+
+.care-list {
+    margin-bottom: 43px;
+}
+
+.care-list li {
+    color: #37393F;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.65;
+    min-height: 30px;
+    padding-left: 35px;
+    margin-bottom: 23px;
+    background: url("../img/mark-list.svg") no-repeat;
+}
+
+.care-subblock {
+    margin-bottom: 37px;
+}
+
+.care-subblock p {
+    color: #7D7D7D;
+    font-size: 16px;
+    line-height: 1.35;
+}
+
+.care-experience {
+    display: inline-block;
+    border: 1px solid #E3E3E3;
+    padding: 32px 32px 20px 85px;
+    max-width: 295px;
+    margin-right: 21px;
+    background: url("../img/makets/exp-icon.svg") 31px 30px no-repeat;
+}
+
+.care-experience-title {
+    text-transform: capitalize;
+    color: #37393F;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 3px;
+}
+
+.care-awards {
+    display: inline-block;
+    border: 1px solid #E3E3E3;
+    padding: 32px 32px 20px 85px;
+    max-width: 295px;
+    margin-right: 21px;
+    background: url("../img/makets/awards-icon.svg")31px 30px no-repeat;
+
+}
+
+.care-button {}
+
+.care-button a {
+    display: inline-block;
+
+    background: #6B77E5;
+    padding: 21px 27px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.22;
+    text-transform: capitalize;
+}
+
+/* ===============================FOOTER========================================== */
+
+.footer {}
+
+.footer-block {
+    text-align: center;
+    padding: 5px 0px;
+    margin-bottom: 35px;
+}
+
+.footer-text {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-text span {
+    font-weight: 600;
+    color: rgb(27, 82, 63);
+    text-shadow: 0px 0px 20px #37393f;
+}
+
+.footer-title {
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
