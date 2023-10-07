@@ -13,8 +13,9 @@ body {
 }
 
 .wrapper {
-    background: radial-gradient(circle, rgba(245, 245, 245, 0) 47%, rgba(0, 0, 0, 0.5495448179271709) 100%);
     margin-bottom: 50px;
+    background: radial-gradient(circle, rgba(245, 245, 245, 0) 47%, rgba(0, 0, 0, 0.5495448179271709) 100%);
+
 }
 
 .up {
@@ -28,7 +29,6 @@ body {
 /* ===================HEADER=========================== */
 .header {
     border-bottom: 1px solid #050404;
-    
 }
 
 .header-container {
@@ -429,12 +429,6 @@ body {
     background: url("../img/makets/discoer/calendar-icon.svg") no-repeat;
 }
 
-.discover-image-financial {
-    width: 384px;
-    height: 501px;
-    margin-bottom: 24px;
-    background: url("../img/makets/discoer/photo-01.jpg") no-repeat;
-}
 
 .discover-galery-title {
     margin-bottom: 10px;
@@ -445,38 +439,33 @@ body {
     line-height: 1.27;
 }
 
-.discover-image-marketing {
+.discover-image {
     width: 384px;
     height: 501px;
     margin-bottom: 24px;
+}
+
+.financial {
+    background: url("../img/makets/discoer/photo-01.jpg") no-repeat;
+}
+
+.marketing {
     background: url("../img/makets/discoer/photo-02.jpg") no-repeat;
 }
 
-.discover-image-business {
-    width: 384px;
-    height: 501px;
-    margin-bottom: 24px;
+.business {
     background: url("../img/makets/discoer/photo-03.jpg") no-repeat;
 }
 
-.discover-image-investment {
-    width: 384px;
-    height: 501px;
-    margin-bottom: 24px;
+.investment {
     background: url("../img/makets/discoer/photo-04.jpg") no-repeat;
 }
 
-.discover-image-development {
-    width: 384px;
-    height: 501px;
-    margin-bottom: 24px;
+.development {
     background: url("../img/makets/discoer/photo-05.jpg") no-repeat;
 }
 
-.discover-image-finivest {
-    width: 384px;
-    height: 501px;
-    margin-bottom: 24px;
+.finivest {
     background: url("../img/makets/discoer/photo-06.jpg") no-repeat;
 }
 
