@@ -47,6 +47,8 @@ body {
 .menu-list {
     display: inline-block;
     padding-left: 450px;
+    padding: 23px 5px 23px 510px;
+
 }
 
 .menu-list li {
@@ -60,13 +62,9 @@ body {
     text-transform: capitalize;
     color: #ffffff;
     line-height: 1.27;
-    padding: 35px 5px;
 }
 
-.menu-link-hidden {
-    /* opacity: 0.3; */
-    /* color: #40DDB6; */
-}
+
 
 /* ===============================MAIN======================================= */
 
@@ -257,7 +255,7 @@ body {
     padding: 183px 74px 158px 74px;
     background:
         linear-gradient(90deg, rgba(0, 0, 0, 0.2)0%, rgba(0, 0, 0, 0.2) 10%),
-        url('../img/makets/grace.jpg') 0 0 / cover no-repeat;
+        url('../img/makets/grace.jpg') center / cover no-repeat;
     display: inline-block;
     font-size: 0;
     margin: 0px -5px 0px 0px;
@@ -304,7 +302,7 @@ body {
     display: inline-block;
     width: 625px;
     min-height: 639px;
-    background: url("../img/makets/people.jpg") 0 0 / cover no-repeat;
+    background: url("../img/makets/people.jpg") center / cover no-repeat;
 }
 
 /* --------------------------clothing------------------------------- */
@@ -418,6 +416,8 @@ body {
     margin-right: 19px;
     display: inline-block;
     margin-bottom: 19px;
+    width: 384px;
+
 }
 
 .discover-galery-items p {
@@ -440,33 +440,32 @@ body {
 }
 
 .discover-image {
-    width: 384px;
     height: 501px;
     margin-bottom: 24px;
 }
 
 .financial {
-    background: url("../img/makets/discoer/photo-01.jpg") no-repeat;
+    background: url("../img/makets/discoer/photo-01.jpg") center /cover no-repeat;
 }
 
 .marketing {
-    background: url("../img/makets/discoer/photo-02.jpg") no-repeat;
+    background: url("../img/makets/discoer/photo-02.jpg") center /cover no-repeat;
 }
 
 .business {
-    background: url("../img/makets/discoer/photo-03.jpg") no-repeat;
+    background: url("../img/makets/discoer/photo-03.jpg") center /cover no-repeat;
 }
 
 .investment {
-    background: url("../img/makets/discoer/photo-04.jpg") no-repeat;
+    background: url("../img/makets/discoer/photo-04.jpg") center /cover no-repeat;
 }
 
 .development {
-    background: url("../img/makets/discoer/photo-05.jpg") no-repeat;
+    background: url("../img/makets/discoer/photo-05.jpg") center /cover no-repeat;
 }
 
 .finivest {
-    background: url("../img/makets/discoer/photo-06.jpg") no-repeat;
+    background: url("../img/makets/discoer/photo-06.jpg") center /cover no-repeat;
 }
 
 
