@@ -538,8 +538,6 @@ body {
     background: url("../img/makets/chek-icon.png");
 }
 
-.managment-list li::before {}
-
 .managment-list li:not(:last-child) {
     margin-bottom: 30px;
 }
@@ -555,11 +553,6 @@ body {
     font-size: 0px;
     color: #000;
 }
-
-.jewels-container div:first-of-type {
-    padding: 0px 0px 0px 0px;
-}
-
 
 .jewels-title {
     display: inline-block;
