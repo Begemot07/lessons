@@ -593,7 +593,7 @@ body {
 
 .jewels-item img {
     margin: 10px 0px -10px 10px;
-    max-width: 332px;
+    width: 100%;
     font-size: 0;
 }
 
