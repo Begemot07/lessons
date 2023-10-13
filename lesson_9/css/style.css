@@ -1,0 +1,660 @@
+/* import fonts  ------*/
+
+/*Hand Made fonts----------------------*/
+@import url('fonts.css');
+/* Reset style */
+@import url("reset.css");
+
+/*main style==================================================================================*/
+
+body {
+    font-family: "Inter";
+    font-size: 18px;
+    color: #7D7D7D;
+}
+
+/* =============================================HEADER=================================== */
+.header {
+    border-bottom: 1px solid #c2c0c0;
+    margin-bottom: 100px;
+}
+
+.header-container {
+    max-width: 1248px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.menu {}
+
+.menu img {
+    margin-right: 295px;
+    vertical-align: middle;
+    padding: 15px 0;
+}
+
+.menu-list {
+    display: inline-block;
+    padding: 15px 0;
+
+}
+
+.menu-list li {
+    padding: 10px 10px 20px 10px;
+    display: inline-block;
+}
+
+.menu-list li:not(:last-child) {
+    margin-right: 42px;
+
+}
+
+.menu-list li:active {
+    color: rgb(11, 11, 245);
+}
+
+.menu-list li:nth-child(2n+2):hover {
+    text-shadow: 1px 1px 30px rgba(0, 0, 0, 0.976);
+    color: #ff0000;
+    padding-bottom: 20px;
+    background: url("../img/fire.gif") 0px -18px / cover no-repeat;
+}
+
+.menu-list li:nth-child(2n+1):hover {
+    text-shadow: 1px 1px 30px rgba(0, 0, 0, 0.976);
+    text-decoration: underline;
+    color: #0059ff;
+    padding-bottom: 20px;
+    background: url("../img/snow.gif") 0px -18px / cover no-repeat;
+}
+
+.menu-link {
+    font-size: 18px;
+    display: inline-block;
+    text-transform: capitalize;
+    line-height: 1.27;
+    font-weight: 700;
+}
+
+/* .menu-link:visited {
+    color: #ee0202;
+} */
+
+/* ===============================MAIN======================================= */
+
+
+.page {
+    margin-bottom: 70px;
+
+}
+
+
+/* [class*='-'] {
+    background: #ca7373;
+} */
+
+/* game============================ */
+.test-container {
+    background: url("../img/space.jpg") fixed;
+    padding: 50px 0;
+    margin-bottom: 100px;
+}
+
+.game {
+    max-width: 1230px;
+    margin: 0 auto 100px;
+}
+
+.game-title {
+    margin: 0 auto 50px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 36px;
+    color: #c2c0c0;
+}
+
+.game-title:hover {
+    text-decoration: underline;
+    color: #7e9bf3;
+}
+
+
+
+.game-block {
+    padding: 15px;
+    box-shadow: 0px 0px 7px 3px #005772;
+    background: url("../img/cosmos.webp") fixed;
+    display: none;
+}
+
+.game-block:target {
+    display: block;
+}
+
+
+.start {
+    width: 50px;
+    height: 50px;
+    border-radius: 40px 40px 0px 0px;
+    border: 1px solid #000;
+    box-shadow: -3px -2px 10px 3px #979191;
+    background: radial-gradient(circle, rgba(13, 1, 1, 1) 39%, rgba(0, 0, 0, 0.6111694677871149) 100%);
+
+}
+
+.start:hover::before {
+    content: "Вперед ";
+    margin: 0px 0px 0px -46px;
+    padding: 15px 0px 0px 0px;
+    display: block;
+    color: #ff7300;
+    font-weight: 700;
+
+}
+
+.line1 {
+    height: 25px;
+    width: 1200px;
+    background: gray;
+}
+
+.line2-block {
+    text-align: right;
+}
+
+.line2 {
+    height: 50px;
+    width: 25px;
+    background: gray;
+    margin: 0px 0px 0px 1175px;
+}
+
+.line3 {
+    height: 25px;
+    width: 1200px;
+    background: gray;
+}
+
+.line4 {
+    height: 50px;
+    width: 25px;
+    background: gray;
+}
+
+.line5 {
+    height: 25px;
+    width: 1200px;
+    background: gray;
+}
+
+.line6 {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px 20px 0px 0px;
+    border: 1px solid #000;
+    box-shadow: -3px -2px 10px 3px #000;
+    background: radial-gradient(circle, rgb(71, 67, 67) 39%, rgba(250, 215, 101, 0.611) 100%);
+    margin: -49px 0px 0px 1155px;
+}
+
+.line6:hover::after {
+    content: "Вийшло";
+    margin: -69px 0px 0px -86px;
+    padding: 15px 0px 0px 0px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    color: #e2f866;
+    background: url("../img/bender.gif")0 0 / cover no-repeat;
+}
+
+.line1,
+.line2,
+.line3,
+.line4,
+.line5,
+.line6 {
+    visibility: hidden;
+}
+
+.line1,
+.line2,
+.line3,
+.line4,
+.line5 {
+    box-shadow: 0px -1px 6px 4px #ffee0063;
+    border: 5px dashed #f5e504;
+}
+
+.start:hover+.line1,
+.line1:hover,
+.line1:hover+.line2,
+.line2:hover,
+.line2:hover+.line3,
+.line3:hover,
+.line3:hover+.line4,
+.line4:hover,
+.line4:hover+.line5,
+.line5:hover,
+.line5:hover+.line6,
+.line6:hover {
+    visibility: visible;
+
+}
+
+/* ==========================GENERAL from makets======================================= */
+
+.title {
+    color: #37393F;
+    font-family: "Poppins";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.21;
+    text-transform: capitalize;
+}
+
+.care-mark-text {
+    color: #37393F;
+    font-weight: 500;
+    line-height: 1.22;
+    margin-bottom: 16px;
+    text-transform: capitalize;
+}
+
+
+.care-mark-text::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: #40DDB6;
+    margin: 0px 6px 1px 0px;
+}
+
+.sometitle {
+    color: #37393F;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+.subtitle {
+    color: #37393F;
+    font-family: "Poppins";
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.27;
+}
+
+
+/* ====================================================================== */
+
+
+/* -------------------CARE------------------------ */
+
+.care-container {
+    max-width: 1250px;
+    padding: 0 15px;
+    margin: 0 auto 150px;
+}
+
+.care-block {
+    padding-left: 545px;
+}
+
+.care-block>:last-child {
+    margin-bottom: 0;
+}
+
+.care-block-text {
+    margin-bottom: 48px;
+}
+
+.care-block-text p {
+    line-height: 1.46;
+}
+
+.care-block-text p:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+
+.care-title {
+    max-width: 415px;
+    margin-bottom: 10px;
+}
+
+
+.care-list {
+    margin-bottom: 48px;
+}
+
+.care-list li {
+    border: 1px solid #E3E3E3;
+    padding: 28px 41px 28px 38px;
+
+}
+
+.care-list li:not(:last-child) {
+    margin-bottom: 31px;
+}
+
+.care-list p {
+    padding: 0px 0px 0px 49px;
+    line-height: 1.46;
+}
+
+.care-list p:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.care-sometitle {
+    margin-bottom: 12px;
+}
+
+.care-sometitle::before {
+    margin: 0px 19px -6px 0px;
+    content: "";
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    background: url("../img/makets/chek-icon.png");
+}
+
+.care-link-button {
+    color: #FFF;
+    font-weight: 600;
+    line-height: 1.22;
+    text-transform: capitalize;
+    background: #6B77E5;
+    padding: 22px 35px;
+    margin-bottom: 16px;
+}
+
+.care-link-button:hover {
+    background: #5563e2;
+}
+
+
+/* -------------------WHY------------------------ */
+.managment-container,
+.how-container {
+    max-width: 1250px;
+    padding: 15px;
+    margin: 0 auto 138px;
+}
+
+.why-mark-text {
+    text-align: center;
+}
+
+.care-mark-text {}
+
+.why-title {
+    text-align: center;
+    margin-bottom: 41px;
+}
+
+.how-block {
+    font-size: 0;
+    padding-top: 38px;
+}
+
+.how-block-item:not(:last-child) {
+    margin-right: 31px;
+}
+
+.how-block-item-before::before {}
+
+.how-block-item {
+    text-align: center;
+    display: inline-block;
+    padding: 58px 43px;
+    background: #F4F4F4;
+    max-width: 386px;
+}
+
+.how-block-item p {
+    line-height: 1.46;
+    margin-bottom: 37px;
+    font-size: 18px;
+}
+
+.how-subtitle {
+    margin-bottom: 16px;
+}
+
+.how-subtitle::before {
+    content: "";
+    display: block;
+    margin: -95px 0px 22px 110px;
+    padding: 0px 0px 0px 0px;
+    width: 72px;
+    height: 72px;
+}
+
+.how-subtitle-make::before {
+    content: "";
+    background: url("../img/makets/how-we-work/calendar-icon.png");
+}
+
+.how-subtitle-consulting::before {
+    content: "";
+    background: url("../img/makets/how-we-work/puzl-icon.png");
+}
+
+.how-subtitle-enjoy::before {
+    content: "";
+    background: url("../img/makets/how-we-work/shield-icon.png");
+}
+
+.how-link {
+    color: #6B77E5;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.22;
+    text-transform: capitalize;
+}
+
+.how-link:hover {
+    text-decoration: underline;
+}
+
+/* -------------------------MANAGMENT--------------------------------------------- */
+.managment-container {}
+
+.managment-block {
+    padding-left: 528px;
+}
+
+.managment-block p {
+    line-height: 1.46;
+    font-size: 18px;
+}
+
+.managment-block p:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.managment-title {
+    color: #37393F;
+    font-family: "Poppins";
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.27;
+    margin-bottom: 13px;
+}
+
+.managment-someblue {
+    color: #6B77E5;
+    line-height: 1.27;
+    margin-bottom: 12px;
+}
+
+.managment-somegreen {
+    color: #40DDB6;
+    line-height: 1.27;
+    margin-bottom: 21px;
+}
+
+.sometitle {}
+
+.managment-block-body {
+    font-size: 0;
+    margin-bottom: 50px;
+}
+
+.managment-block-body img {
+    max-width: 331px;
+    margin-right: 29px;
+}
+
+.managment-block-body-text {
+    max-width: 332px;
+    display: inline-block;
+}
+
+.managment-subtitle {
+    margin-bottom: 15px;
+}
+
+.subtitle {}
+
+.managment-list {}
+
+.managment-list li {
+    font-size: 18px;
+}
+
+.managment-list li::before {
+    margin: 0px 9px -6px 0px;
+    content: "";
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    background: url("../img/makets/chek-icon.png");
+}
+
+.managment-list li::before {}
+
+.managment-list li:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+/* ----------------------------------------JEWELS------------------------------------ */
+
+.jewels-container {
+    max-width: 1244px;
+    padding: 0 15px;
+    margin: 0 auto 100px;
+    font-family: "Cormorant Infant";
+    font-weight: 700;
+    font-size: 0px;
+    color: #000;
+}
+
+.jewels-container div:first-of-type {
+    padding: 0px 0px 0px 0px;
+}
+
+
+.jewels-title {
+    display: inline-block;
+    max-width: 480px;
+    font-size: 60px;
+    line-height: 1.15;
+    vertical-align: middle;
+    margin-right: 20px;
+    padding: 0px 0px 110px 0px;
+}
+
+.jewels-title::after {
+    margin: 13px 0px 0px 0px;
+    content: "";
+    display: block;
+    width: 304px;
+    height: 3px;
+    background: #78473B;
+}
+
+.jewels-item {
+    max-width: 334px;
+    display: inline-block;
+    font-size: 24px;
+    vertical-align: middle;
+
+}
+
+.jewels-item:not(:last-child) {
+    margin-right: 45px;
+}
+
+.jewels-item img {
+    margin: 10px 0px -10px 10px;
+    padding: 0px 0px 0px 0px;
+    font-size: 0;
+}
+
+.jewels-item img:hover {
+    box-shadow: 0px 0px 10px 2px #000;
+}
+
+.image-frame {
+    border: 1px solid #000;
+    margin-bottom: 34px;
+
+}
+
+.jewels-item p {
+    margin-bottom: 4px;
+}
+
+.image-frame {}
+
+.jewels-title-link:hover {
+    text-decoration: underline;
+}
+
+.jewels-title-price {
+    line-height: 1.4;
+}
+
+.jewels-item-title {
+    padding: 130px 0px 0px 0px;
+    font-size: 46px;
+    line-height: 1.13;
+    margin-bottom: 31px;
+}
+
+/* ===============================FOOTER========================================== */
+
+.footer {}
+
+.footer-block {
+    text-align: center;
+    padding: 5px 0px;
+    margin-bottom: 35px;
+}
+
+.footer-text {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.footer-text span {
+    font-weight: 600;
+    color: rgb(27, 82, 63);
+    text-shadow: 0px 0px 20px #37393f;
+}
+
+.footer-text span:hover {
+    color: #ff0000;
+}
+
+.footer-title {
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
