@@ -438,17 +438,17 @@ body {
 
 .how-subtitle-make::before {
     content: "";
-    background: url("../img/makets/how-we-work/calendar-icon.png");
+    background: url("../img/makets/how-we-work/calendar-icon.png")center / cover no-repeat;
 }
 
 .how-subtitle-consulting::before {
     content: "";
-    background: url("../img/makets/how-we-work/puzl-icon.png");
+    background: url("../img/makets/how-we-work/puzl-icon.png")center / cover no-repeat;
 }
 
 .how-subtitle-enjoy::before {
     content: "";
-    background: url("../img/makets/how-we-work/shield-icon.png");
+    background: url("../img/makets/how-we-work/shield-icon.png")center / cover no-repeat;
 }
 
 .how-link {
