@@ -601,7 +601,7 @@ body {
 
 }
 
-.jewels-item p {
+.jewels-item p:not(:last-child) {
     margin-bottom: 4px;
 }
 
