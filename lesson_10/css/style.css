@@ -1,0 +1,61 @@
+/* import fonts  ------*/
+
+/*Hand Made fonts----------------------*/
+@import url('fonts.css');
+/* Reset style */
+@import url("reset.css");
+
+/*main style==================================================================================*/
+
+body {
+    font-family: "Inter";
+    font-size: 32px;
+    color: #fffdfd;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.88)100%, rgba(0, 0, 0, 0.88)100%),
+        url('../img/cosmos.webp')0 0 /contain fixed;
+    padding: 50px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+}
+
+img {
+    vertical-align: middle;
+}
+
+body p:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+div {
+    padding: 30px 20px;
+    border: 1px solid #ffffff42;
+}
+
+div:not(:last-child) {
+    margin-bottom: 100px;
+}
+
+span {
+    color: aqua;
+}
+
+/* =============================================HEADER=================================== */
+
+/* =============================================MAIN======================================= */
+.page {
+    margin-bottom: 150px;
+}
+
+/* =============================================FOOTER========================================== */
+
+
+footer h6 {
+    text-align: center;
+    padding: 10px 0;
+}
