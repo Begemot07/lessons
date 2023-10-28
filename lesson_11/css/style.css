@@ -1,0 +1,165 @@
+/* import fonts  ------*/
+
+/*Hand Made fonts----------------------*/
+@import url('fonts.css');
+/* Reset style */
+@import url("reset.css");
+
+/*main style==================================================================================*/
+
+
+/* =============================================HEADER=================================== */
+.header {}
+
+.header--margin {}
+
+.header__container {}
+
+.header__menu {}
+
+.menu {}
+
+.menu__list {}
+
+.menu__items {}
+
+.item {}
+
+.item__search {}
+
+.item__list {}
+
+/* =============================================MAIN======================================= */
+.page {}
+
+.page__container {}
+
+.properties {}
+
+.properties__body {}
+
+.properties__navigation-tree {}
+
+.properties__title {}
+
+.title {}
+
+.properties__rating {}
+
+.rating {}
+
+.rating__star-field {}
+
+.rating__comments {}
+
+.properties__size {}
+
+.size {}
+
+.size__guide-size {}
+
+.size__choice {}
+
+.properties__colors-choice {}
+
+.choice-color {}
+
+.choice-color__title {}
+
+.choice-color__list {}
+
+.properties__buy {}
+
+.buy {}
+
+.buy__button {}
+
+.buy__price {}
+
+.properties__advantages-list {}
+
+.description {}
+
+.description__body {}
+
+.description__title {}
+
+.description__tabs {}
+
+.tab-description {}
+
+.tab-description__title {}
+
+.tab-description__text {}
+
+.characteristic {}
+
+.characteristic__title {}
+
+.characteristic__text {}
+
+.tab-comments {}
+
+.tab-comments__title {}
+
+.tab-qa {}
+
+.tab-qa__title {}
+
+.description__review {}
+
+.similar {}
+
+.similar__items {}
+
+.item {}
+
+.item__image {}
+
+.item__block {}
+
+.text {}
+
+.price {}
+
+/* =============================================FOOTER========================================== */
+
+.footer {}
+
+.footer__container {}
+
+.footer__body {}
+
+.body {}
+
+.body__items {}
+
+.item {}
+
+.item__title {}
+
+.title-footer {}
+
+.item__list {}
+
+.footer__social {}
+
+.social {}
+
+.social__list {}
+
+.social__app {}
+
+.app {}
+
+.app__title {}
+
+.app__list {}
+
+.footer__popular-categories {}
+
+.popular {}
+
+.popular__title {}
+
+.footer__copyright {}
