@@ -224,9 +224,7 @@ body {
   position: sticky;
   top: 110px;
   left: 0px;
-  /* min-height: 700px; */
-
-}
+  }
 
 .page__block-1 h2 {
   font-size: 36px;
