@@ -349,9 +349,9 @@ body {
 
 .item__social {
   position: absolute;
-  top: 241px;
-  left: 102px;
-  z-index: 3;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0px 0px -88px;
   visibility: hidden;
 
 }
