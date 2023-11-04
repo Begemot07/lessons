@@ -183,10 +183,11 @@ body {
   display: inline-block;
   width: 250px;
   vertical-align: top;
-  /* position: sticky; */
+  position: sticky;
   top: 110px;
   left: 0px;
   margin-right: 30px;
+  margin-bottom: 100px;
 }
 
 .side__text-1 {
@@ -213,10 +214,17 @@ body {
 
 .page__block-1,
 .page__block-2 {
+
+  min-height: 700px;
+
+}
+
+.page__block-1 h2,
+.page__block-2 h2 {
   position: sticky;
   top: 110px;
   left: 0px;
-  min-height: 700px;
+  /* min-height: 700px; */
 
 }
 
@@ -234,7 +242,6 @@ body {
 }
 
 .page__block-2 {
-  background: #fff;
   border-bottom: 1px solid #000;
 
 }
