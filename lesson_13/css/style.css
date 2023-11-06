@@ -1,0 +1,553 @@
+/* import fonts  ------*/
+
+/*Hand Made fonts----------------------*/
+@import url('fonts.css');
+/* Reset style */
+@import url("reset.css");
+
+/*main style==================================================================================*/
+body {
+  line-height: 1.22;
+  font-family: "Inter";
+}
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+}
+
+[class*='_container'] {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
+}
+
+[class*='--margin'] {
+  margin-bottom: 100px;
+}
+
+/* =============================================HEADER=================================== */
+
+.header {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(rgba(3, 3, 3, 1)0%, rgba(0, 0, 0, 0.7)50%, rgba(0, 0, 0, 0.6)100%);
+
+}
+
+.header__container {}
+
+.header__menu {}
+
+.menu {
+  font-size: 20px;
+  padding: 20px 15px;
+}
+
+.menu__list {
+  position: relative;
+}
+
+
+
+.list>li {
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  padding: 5px 10px;
+  background: #000;
+  border-radius: 6px;
+}
+
+.list li a {
+  padding: 5px;
+  text-transform: capitalize;
+  border-radius: 5px;
+
+}
+
+.list>li:hover,
+.list__submenu li:hover {
+  background: linear-gradient(130deg, rgb(75, 75, 75) 6%, rgba(0, 0, 0, 1) 100%);
+
+}
+
+.list li:hover .submenu-items {
+  visibility: visible;
+}
+
+.list>li:nth-child(2n+1)::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid rgb(196, 194, 194);
+  left: 2px;
+  top: 0px;
+  position: relative;
+  display: inline-block;
+}
+
+.list>li:hover::after {
+  left: 2px;
+  top: 10px;
+  position: relative;
+  border-top: 10px solid rgb(196, 194, 194);
+  border-bottom: 10px solid transparent;
+}
+
+.list__submenu {}
+
+.submenu-items {
+  width: 160px;
+  position: absolute;
+  left: 10%;
+  top: 100%;
+  visibility: hidden;
+  padding: 10px 0px 0px 0px;
+}
+
+.submenu-items>li:first-child {
+  border-radius: 0px 20px 0px 0px;
+}
+
+.submenu-items>li:last-child {
+  border-radius: 0px 0px 0px 20px;
+}
+
+.submenu-items li {
+  background: rgb(0, 0, 0);
+  padding: 5px;
+}
+
+.submenu-items li:hover .submenu-items__list {
+  visibility: visible;
+}
+
+.submenu-items>li:last-child::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-left: 10px solid rgb(196, 194, 194);
+  display: inline-block;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.submenu-items>li:hover:last-child::after {
+  border-top: 10px solid rgb(196, 194, 194);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: relative;
+  top: 7px;
+  left: 0px;
+}
+
+.submenu-items__list {
+  position: absolute;
+  left: 100%;
+  top: 70%;
+  width: 140px;
+  visibility: hidden;
+  padding: 0px 0px 0px 5px;
+}
+
+.submenu-items__list>li:first-child {
+  border-radius: 0px 20px 0px 0px;
+}
+
+.submenu-items__list>li:last-child {
+  border-radius: 0px 0px 20px 20px;
+}
+
+/* =============================================MAIN======================================= */
+
+.page {}
+
+.page__container {
+  padding: 100px 0;
+}
+
+.page__test {}
+
+.test {
+  font-size: 0;
+}
+
+.test__block {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background: #f8020227;
+  vertical-align: middle;
+}
+
+.test__block:not(:last-child) {
+  margin-right: 55px;
+}
+
+.test__block:nth-child(2) {
+  box-shadow: inset 0px 0px 27px 3px #000;
+}
+
+.test__block:nth-child(4) {
+  box-shadow: inset 17px -20px 20px 1px #00000042;
+}
+
+.test__item {
+  width: 200px;
+  height: 200px;
+  background: rgb(67, 119, 0);
+  /* transition: all 0.3s ease; */
+}
+
+.test__item p {
+  text-align: center;
+  padding: 80px 5px;
+  font-size: 24px;
+  color: rgb(248, 245, 245);
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.test__block:hover .translate {
+  transform: translate(-20px, 20px);
+  background: rgba(67, 119, 0, 0.623);
+
+}
+
+.test__block:hover .scale {
+  transform: scale(0.7);
+  box-shadow: 0px 0px 37px 33px #000;
+  border-radius: 4%;
+}
+
+.rotate:hover {
+  transform: rotate(-15deg);
+  background: rgba(67, 119, 0, 0.623);
+}
+
+.skew p {
+  position: relative;
+}
+
+.skew {
+  background: transparent;
+  position: relative;
+  font-size: 24px;
+}
+
+.skew::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(67, 119, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* transition: all 0.3s ease; */
+}
+
+.skew:hover::before {
+  transform: skew(10deg, 10deg);
+  transform-origin: 0% 90%;
+  border-radius: 0px 10px 0px 0px;
+  background: rgba(67, 119, 0, 0.623);
+  border: 1px solid #000;
+}
+
+.test__block:hover .transform-origin {
+  transform: rotate(-15deg);
+  transform-origin: 100% 0;
+  background: rgba(67, 119, 0, 0.623);
+}
+
+/* ----------3d---------------- */
+
+.test__block {
+  transform-style: preserve-3d;
+  perspective: 400px;
+}
+
+.test__block:nth-child(3) {
+  background: #000;
+}
+
+
+.test__item {}
+
+.translate-3 {}
+
+.test__block:hover .translate-3d {
+  transform: translate3d(100px, 30px, 100px) rotate3d(1, 0, 0.4, 75deg);
+  transform-origin: 100% 50%;
+  background: rgba(67, 119, 0, 0.623);
+}
+
+.test__block:hover .scale-3d {
+  transform: scale3d(0.7, 0.7, 1.5);
+  background: rgba(67, 119, 0, 0.623);
+
+}
+
+.test__block:hover .rotate-3d {
+  transform: rotate3d(0, 0.55, 0.4, 75deg);
+  background: rgba(67, 119, 0, 0.623);
+}
+
+.test__block:hover .skew-3d {
+  transform: skew(45deg, 138deg);
+  background: rgba(67, 119, 0, 0.623);
+}
+
+.test__block--flip {
+  position: relative;
+  transform-style: flat;
+}
+
+.back,
+.front {
+  transition: all 0.9s ease-out;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.front {
+  backface-visibility: hidden;
+  background: #000;
+  transform: rotate3d(1, 1, 1, 0deg);
+}
+
+.back {
+  backface-visibility: hidden;
+  transform: rotate3d(20, 10, 1, -180deg);
+  background: url("../img/mem1.jpg")-50px 0px / cover no-repeat;
+}
+
+.test__block:hover .front {
+  transform: rotate3d(20, 10, 1, 180deg);
+}
+
+.test__block:hover .back {
+  transform: rotate3d(20, 10, 1, 0deg);
+}
+
+/* ======================CAR============================================================================ */
+.field {
+  padding: 150px 50px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.car {
+  padding: 100px 100px 35px 250px;
+  box-shadow: inset -70px 0px 20px 10px #000;
+  border-bottom: 10px solid #000;
+}
+
+.car__body {
+  width: 500px;
+  height: 130px;
+  background: #000;
+  position: relative;
+  border-radius: 90px 69px 10px 10px;
+}
+
+.car__body::before {
+  content: "";
+  width: 25px;
+  height: 12px;
+  background: rgb(221, 199, 0);
+  box-shadow: 0px 0px 7px 3px rgb(221, 199, 0);
+  position: absolute;
+  top: 68px;
+  left: 1px;
+  border-radius: 8px 0px 29px 1px;
+}
+
+.car__body::after {
+  content: "";
+  width: 12px;
+  height: 27px;
+  background: rgb(221, 7, 0);
+  position: absolute;
+  top: 58px;
+  left: 488px;
+  border-radius: 6px 2px 1px 6px;
+  box-shadow: 0px 0px 7px 1px rgb(221, 7, 0);
+}
+
+
+.car__window {
+  position: absolute;
+  top: 10px;
+  left: 172px;
+  width: 82px;
+  height: 40px;
+  background: rgb(5, 58, 71);
+  transform: skew(-60deg, 0);
+  border-radius: 10px 10px 0px 0px;
+}
+
+.car__window--front::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  width: 15px;
+  height: 40px;
+  background: rgb(15, 15, 15);
+}
+
+.car__window--front {
+  position: absolute;
+  top: 10px;
+  left: 204px;
+  width: 232px;
+  height: 40px;
+  transform: skew(0deg, 0);
+}
+
+
+.car__window--rear {
+  position: absolute;
+  top: 10px;
+  left: 382px;
+  width: 92px;
+  height: 40px;
+  transform: skew(40deg, 0);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.car__roof {
+  position: absolute;
+  top: -17px;
+  left: 22px;
+  width: 155px;
+  height: 70px;
+  background: #ffffff;
+  transform: skew(-60deg, 0) rotate(357deg);
+  border-radius: 0px 0px 8px 0px;
+  z-index: 5;
+}
+
+.car__roof::before {
+  content: "";
+  position: absolute;
+  top: 129px;
+  left: 140px;
+  width: 18px;
+  height: 19px;
+  background: #525151;
+  transform: skew(60deg, 0) rotate(3deg);
+  border-radius: 6px 1px 0px 6px;
+}
+
+.car__roof::after {
+  content: "";
+  position: absolute;
+  top: 154px;
+  left: 628px;
+  width: 18px;
+  height: 19px;
+  background: #525151;
+  transform: skew(56deg, 0) rotate(3deg);
+  border-radius: 2px 4px 5px 1px;
+}
+
+.car__wheel {
+  width: 85px;
+  height: 85px;
+  background: #000000;
+  border-radius: 50%;
+  border-top: 7px solid rgb(58, 57, 57);
+  border-left: 2px solid rgb(58, 57, 57);
+  border-right: 2px solid rgb(58, 57, 57);
+  position: relative;
+}
+
+.car__wheel::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background: #c0a3a3;
+  border-radius: 50%;
+  border: 9px dotted rgb(0, 0, 0);
+}
+
+
+
+.car__wheel--front {
+  position: absolute;
+  top: 80px;
+  left: 35px;
+}
+
+.car__wheel--rear {
+  position: absolute;
+  top: 80px;
+  left: 370px;
+}
+
+.car__door {
+  position: absolute;
+  top: 7px;
+  left: 137px;
+  width: 175px;
+  height: 115px;
+  border: 1px solid #252525;
+  border-radius: 10px 3px 10px 1px;
+}
+
+.car__door::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  width: 17px;
+  height: 8px;
+  border: 1px solid #505050;
+  background: #505050;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.car__door::after {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 303px;
+  width: 27px;
+  height: 18px;
+  border: 1px solid #505050;
+  border-radius: 0px 7px 3px 0px;
+}
+
+/* =============================================FOOTER========================================== */
+
+.footer {
+  padding: 24px 0;
+  border-top: 1px solid #00000027;
+
+}
+
+.footer p {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
