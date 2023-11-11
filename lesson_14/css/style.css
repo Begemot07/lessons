@@ -278,7 +278,7 @@ body {
   top: 64px;
   border: 3px dashed #1f1e1e;
   z-index: 10;
-  animation: wheel-rotate 5s forwards;
+  animation: wheel-rotate 5s forwards, wheel-rotate-next 4s 12.5s forwards;
 }
 
 @keyframes wheel-rotate {
@@ -296,7 +296,18 @@ body {
 
   }
 }
+@keyframes wheel-rotate-next {
+  0% {
+    transform: rotateZ(181deg);
+  }
 
+
+  0% {
+    transform: rotateZ(720deg);
+
+  }
+
+}
 .car__wheel::before {
   content: "";
   position: absolute;
