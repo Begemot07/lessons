@@ -160,7 +160,9 @@ body {
   flex: 1 1 30%;
 }
 
-.select-item {}
+.select-item {
+cursor: pointer;
+}
 
 .select-item option {
   background: #F6F6F6;
