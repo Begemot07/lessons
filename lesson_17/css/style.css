@@ -526,8 +526,7 @@ body {
   flex-wrap: wrap;
   gap: 15px 37px;
   align-items: center;
-  justify-content: center;
-}
+  }
 
 .content__box {
   flex: 0 1 150px;
@@ -617,6 +616,9 @@ body {
 
   .item-body {
     flex: 1 0 297px;
+  }
+  .content__wrap {
+    justify-content: center;
   }
 }
 
