@@ -329,6 +329,9 @@ body {
   .item__body {
     flex: 0 1 50%;
   }
+  .products-grand__items .item__body {
+    flex: 0 1 50%;
+}
 }
 
 @media (max-width:522.98px) {
@@ -337,6 +340,9 @@ body {
   }
   .products-grand--decor {
     background: none;
+}
+    .products-grand__items .item__body {
+    flex: 0 1 100%;
 }
 }
 
