@@ -339,7 +339,7 @@ body {
     flex: 0 1 100%;
   }
   .products-grand--decor {
-    background: none;
+    background: #FEFAF4;
 }
     .products-grand__items .item__body {
     flex: 0 1 100%;
