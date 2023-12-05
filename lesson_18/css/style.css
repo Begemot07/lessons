@@ -254,7 +254,7 @@ body {
     top: 0;
     right: 0;
     z-index: 2;
-    transition: right visible opacity 0.3s;
+    transition: right 0.3s;
     background-color: #FEFBF7;
   }
 
