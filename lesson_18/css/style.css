@@ -565,6 +565,7 @@ body {
   background: #0E333D;
   padding: 12px 26px;
   z-index: 5;
+    transition: all 0.3s;
 }
 
 
