@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>lesson 20 SASS</title>
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+      <header class="header">
+
+        <div class="header__container">
+
+          <img src="img/logo.svg" alt="logo" class="header__logo">
+
+
+          <input class="header__search" type="search" placeholder="Search">
+
+          <div class="header__body">
+
+            <div class="header__actions">
+
+              <div class="header__language">
+                <select name="language" id="language-choice">
+                  <option value="en(usa)">English (United States)</option>
+                  <option value="ua">Ukrainian (Ukraine)</option>
+                </select>
+              </div>
+
+              <div class="header__login-actions">
+                <a href="login.html" class="header__login active">login</a>
+                <a href="signup.html" class="header__Sign">Sign Up</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </header>
+
+      <main class="page">
+
+
+        <div class="login">
+
+          <div class="login__bg"><img src="img/bg-login.webp" alt="people"></div>
+
+          <div class="login__container">
+
+            <div class="login__body">
+              <h3 class="login__title title">Sign In Page</h3>
+
+              <a href="#" class="login__google">Continue With Google</a>
+
+              <a href="#" class="login__twitter">Continue With Twitter</a>
+
+              <div class="login__or">OR</div>
+              <form action="#" enctype="multipart/form-data" class="login__form form">
+
+                <div class="login__email">
+                  <label for="name">user name or email address</label>
+                  <input required type="text" name="name" id="name">
+                </div>
+
+                <div class="login__password">
+                  <span class="login__pass-hide" id="pass-hide">hide</span>
+                  <label for="pass">Password</label>
+                  <input required minlength="6" type="password" name="password" id="pass">
+                </div>
+                <a href="#" class="login__forgot-link">Forget your password</a>
+                <button type="submit" class="login__button">Sign In</button>
+
+                <div class="login__signup-link">
+                  Don’t have an account?
+                  <a href="signup.html">Sign up </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+      <footer class="footer">
+
+        <div class="footer__container">
+
+          <div class="footer__text">
+            <p> lesson 20</p>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    <script src="js/script.js"></script>
+
+  </body>
+
+</html>
