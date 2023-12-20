@@ -1,0 +1,7 @@
+// ======================= formula встановлення значення в заданих користувачем межах
+// $containerWidth: 1200;
+
+@function rangeValue($minValue, $maxValue) {
+  $currentValue: clamp(#{$minValue}px, calc($maxValue / ($containerWidth / 100vw)), #{$maxValue}px);
+  @return $currentValue;
+}
