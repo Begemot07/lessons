@@ -1,0 +1,37 @@
+// $containerWidth: значення задаємо;
+// variables-----------
+
+$containerWidth: 1270;
+
+// ------------------
+//перетворення px в rem
+@function toRem($valuePx, $valueFz: 16) {
+  $convertValue: calc(($valuePx / $valueFz) * 1rem);
+  @return $convertValue;
+}
+
+//перетворення px в em
+@function toEm($valuePx, $valueFz: 16) {
+  $convertValue: calc(($valuePx / $valueFz) * 1em);
+  @return $convertValue;
+}
+
+// фунція для встановлення значення в заданих користувачем межах
+@function rangeValue($minValue, $givenValue) {
+  $currentValue: clamp(
+    toRem($minValue),
+    calc(toRem($minValue) + ($givenValue - $minValue) * ((100vw - 320px) / ($containerWidth - 320))),
+    toRem($givenValue)
+  );
+  @return $currentValue;
+}
+
+// фунція для встановлення значення згідно макету та при ширині 320px, яке не матиме обмеження
+@function adaptivInfinitiValua($minValue, $givenValue) {
+  $rezult: calc(toRem($minValue) + ($givenValue - $minValue) * ((100vw - 320px) / ($containerWidth - 320)));
+  @return $rezult;
+}
+//default 40px
+//min 24px
+//container width 1280
+// font-size: calc(24px + 24 * ((100vw - 320px) / (1280 - 320)));
