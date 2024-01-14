@@ -1,0 +1,125 @@
+@import "_fonts.scss";
+@import "_reset.scss";
+@import "_function.scss";
+
+// ----------------------------------------------------
+//colors
+$primaryColor: #7d7d7d;
+$darkColor: #37393f;
+$whiteColor: #fff;
+$whiteSecondColor: #f4f4f4;
+$primaryButtonColor: #6b77e5;
+$secondaryButtonColor: #40ddb6;
+//varibles
+$headerHeight: rangeValue(70, 108);
+$coreSansC: "Core Sans C", serif;
+//template
+@mixin button($color: $whiteColor, $bg: $primaryButtonColor) {
+	color: $color;
+	font-family: "Inter", sans-serif;
+	font-size: toRem(18);
+	font-weight: 600;
+	line-height: 1.22;
+	text-transform: capitalize;
+	padding: toEm(22, 18) toEm(43, 18);
+	background: $bg;
+	transition: all 0.3s;
+	white-space: nowrap;
+	@media (any-hover: hover) {
+		&:hover {
+			background: $bg;
+			@if ($bg==$primaryButtonColor) {
+				background: $secondaryButtonColor;
+			}
+			@if ($bg==$secondaryButtonColor) {
+				background: $primaryButtonColor;
+			}
+			@if ($bg==$darkColor) {
+				background: $primaryButtonColor;
+			}
+		}
+	}
+}
+@mixin subTitlePlusSquad($textColor: $darkColor, $squadColor: $secondaryButtonColor) {
+	color: $textColor;
+	font-size: rangeValue(14, 18);
+	font-weight: 500;
+	line-height: 1.22;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	&::before {
+		content: "";
+		width: 12px;
+		height: 12px;
+		background: $squadColor;
+	}
+}
+@mixin marginBottomNotLast($min: 25, $given: 25) {
+	&:not(:last-child) {
+		margin-bottom: rangeValue($min, $given);
+	}
+}
+
+// ------------
+body {
+	font-family: "Inter", sans-serif;
+	line-height: 1.46;
+	color: $primaryColor;
+	@media (max-width: toEm(1090.98)) {
+		.menu-open & {
+			overflow: hidden;
+		}
+	}
+}
+.wrapper {
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	> main {
+		flex-grow: 1;
+	}
+}
+
+[class*="_container"] {
+	// задаємо ширину контейнера без одиниць вимірювання в змінну $containerWidth: в _function.scss
+	max-width: 1250px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+// ---------------------------------------------
+// \\\\\\\\\\\\\\\\\\general
+
+//HEADER\\===========
+// ---------top---------
+
+// ---------------------header-main-----------
+
+//MAIN\\=============
+.page {
+	padding: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+	&__button {
+		@include button();
+	}
+	&__img {
+		transition: all 1.3s;
+		position: fixed;
+		left: -100%;
+		top: 0;
+		.show & {
+			left: 0%;
+		}
+	}
+}
+
+// --------------------------------------
+
+// ---------------------------------------
+
+//FOOTER\\===========

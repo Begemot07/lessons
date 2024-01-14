@@ -1,0 +1,96 @@
+// @media (max-width: toEm(767.98)) {
+//   &__burger {
+//     width: 30px;
+//     height: 26px;
+//     position: relative;
+//     background: transparent;
+//   }
+
+//   &__burger span,
+//   &__burger::before,
+//   &__burger::after {
+//     content: "";
+//     position: absolute;
+//     left: 0px;
+//     width: 100%;
+//     height: 4px;
+//     background: #000;
+//     transition: all 0.3s;
+//   }
+
+//   &__burger span {
+//     top: 50%;
+//     margin-top: -2px;
+//   }
+
+//   &__burger::before {
+//     top: 0;
+//   }
+
+//   &__burger::after {
+//     bottom: 0;
+//   }
+
+//   .menu-open &__burger::before {
+//     transform: rotate(45deg);
+//     top: 50%;
+//   }
+
+//   .menu-open &__burger::after {
+//     transform: rotate(-45deg);
+//     top: 50%;
+//   }
+
+//   .menu-open &__burger span {
+//     display: none;
+//   }
+// }
+@media (max-width: toEm(767.98)) {
+  display: none;
+  @media (max-width: toEm(1090.98)) {
+    width: 30px;
+    height: 26px;
+    position: relative;
+    // background: transparent;
+    display: block;
+  }
+
+  span,
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 4px;
+    background: $darkColor;
+    transition: all 0.3s;
+  }
+
+  span {
+    top: 50%;
+    margin-top: -2px;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  .menu-open &::before {
+    transform: rotate(45deg);
+    top: 50%;
+  }
+
+  .menu-open &::after {
+    transform: rotate(-45deg);
+    top: 50%;
+  }
+
+  .menu-open & span {
+    display: none;
+  }
+}
