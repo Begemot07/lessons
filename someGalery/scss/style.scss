@@ -1,0 +1,220 @@
+@import "_fonts.scss";
+@import "_reset.scss";
+@import "_function.scss";
+
+// ----------------------------------------------------
+//colors
+$primaryColor: #7d7d7d;
+$darkColor: #37393f;
+$whiteColor: #fff;
+$whiteSecondColor: #f4f4f4;
+$primaryButtonColor: #6b77e5;
+$secondaryButtonColor: #40ddb6;
+//varibles
+$headerHeight: rangeValue(70, 108);
+$coreSansC: "Core Sans C", serif;
+//template
+@mixin button($color: $whiteColor, $bg: $primaryButtonColor) {
+	color: $color;
+	font-family: "Inter", sans-serif;
+	font-size: toRem(18);
+	font-weight: 600;
+	line-height: 1.22;
+	text-transform: capitalize;
+	padding: toEm(22, 18) toEm(43, 18);
+	background: $bg;
+	transition: all 0.3s;
+	white-space: nowrap;
+	@media (any-hover: hover) {
+		&:hover {
+			background: $bg;
+			@if ($bg==$primaryButtonColor) {
+				background: $secondaryButtonColor;
+			}
+			@if ($bg==$secondaryButtonColor) {
+				background: $primaryButtonColor;
+			}
+			@if ($bg==$darkColor) {
+				background: $primaryButtonColor;
+			}
+		}
+	}
+}
+@mixin subTitlePlusSquad($textColor: $darkColor, $squadColor: $secondaryButtonColor) {
+	color: $textColor;
+	font-size: rangeValue(14, 18);
+	font-weight: 500;
+	line-height: 1.22;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	&::before {
+		content: "";
+		width: 12px;
+		height: 12px;
+		background: $squadColor;
+	}
+}
+@mixin marginBottomNotLast($min: 25, $given: 25) {
+	&:not(:last-child) {
+		margin-bottom: rangeValue($min, $given);
+	}
+}
+// general---------------
+
+// ------------
+body {
+	font-family: "Inter", sans-serif;
+	line-height: 1.2;
+	@media (max-width: toEm(1090.98)) {
+		.menu-open & {
+			overflow: hidden;
+		}
+	}
+}
+.wrapper {
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	> main {
+		flex-grow: 1;
+	}
+}
+
+[class*="_container"] {
+	// задаємо ширину контейнера без одиниць вимірювання в змінну $containerWidth: в _function.scss
+	max-width: 1250px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+// ---------------------------------------------
+// \\\\\\\\\\\\\\\\\\general
+
+//HEADER\\===========
+
+//MAIN\\=============
+.page {
+	padding: rangeValue(15, 50) 0;
+	&__container {
+		max-width: 950px;
+		position: relative;
+		display: flex;
+		gap: 25px;
+		justify-content: space-between;
+		@media (max-width: toEm(989.98)) {
+			flex-wrap: wrap;
+		}
+	}
+}
+.box {
+	transform: translate(00px, 0px);
+	width: 100%;
+	clip-path: path(
+		"M0.52832 121C0.52832 109.954 9.48263 101 20.5283 101H162C173.046 101 182 92.0457 182 81V20C182 8.95431 190.954 0 202 0H468C479.046 0 488 8.95431 488 20V180C488 191.046 479.046 200 468 200H337.528C326.483 200 317.528 208.954 317.528 220V369C317.528 380.046 308.574 389 297.528 389H20.5283C9.48262 389 0.52832 380.046 0.52832 369V121Z"
+	);
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		overflow: visible;
+		transition: all 0.3s;
+	}
+	@media (any-hover: hover) {
+		&:hover img {
+			transform: scale(1.09);
+		}
+	}
+	@media (max-width: toEm(989.98)) {
+		top: 0;
+		left: 0;
+		clip-path: none;
+	}
+}
+.box__item1 {
+	padding: 25px;
+	background: #6b83e5;
+	border-radius: 20px;
+	width: 160px;
+	min-height: 80px;
+	position: absolute;
+	top: 0px;
+	left: 15px;
+	z-index: 2;
+	overflow: hidden;
+	@media (max-width: toEm(989.98)) {
+		position: static;
+	}
+}
+.box__item2 {
+	transform: translate(00px, 90px);
+	width: 100%;
+	@media (max-width: toEm(989.98)) {
+		transform: translate(00px, 0px);
+		clip-path: none;
+	}
+	clip-path: path(
+		"M406 182.068V281C406 292.046 397.046 301 386 301H20C8.95431 301 0 292.046 0 281V153C0 141.954 8.95431 133 20 133H147.334C158.38 133 167.334 124.046 167.334 113V20C167.334 8.95431 176.289 0 187.334 0H386C397.046 0 406 8.95431 406 20V182.068Z"
+	);
+
+	img {
+		overflow: visible;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: all 0.3s;
+		@media (any-hover: hover) {
+			&:hover {
+				transform: scale(1.09);
+			}
+		}
+	}
+}
+.box__item3 {
+	margin-left: 90px;
+	@media (max-width: toEm(989.98)) {
+		clip-path: none;
+		overflow: visible;
+		max-width: 100%;
+		margin-left: 0px;
+		height: 100%;
+	}
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: all 0.3s;
+		@media (any-hover: hover) {
+			&:hover {
+				transform: scale(1.09);
+			}
+		}
+	}
+	max-width: 140px;
+	height: 390px;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.box__item4 {
+	position: absolute;
+	left: 524px;
+	top: 0px;
+	padding: 25px 80px;
+	background: red;
+	border-radius: 20px;
+	color: #fff;
+	transition: all 0.3s;
+	@media (max-width: toEm(989.98)) {
+		position: static;
+	}
+	@media (any-hover: hover) {
+		&:hover {
+			background: greenyellow;
+			color: #7d7d7d;
+		}
+	}
+}
+
+// ---------------------------------------
+
+//FOOTER\\===========
