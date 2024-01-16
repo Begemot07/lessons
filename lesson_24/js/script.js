@@ -53,12 +53,15 @@
 // Обробіть масив за допомогою методу перебору
 // Перевіряйте елемент на відповідність числу 10, та у разі відповідності, виводьте в консоль
 // const givenArray = ["banana", 10, "10", true, NaN]
-// givenArray.forEach((el) => console.log(el))
-// if (givenArray.includes(10)) {
-// 	console.log(`Ось воно ${10}`)
-// } else {
-// 	console.log("Немає такого")
-// }
+// // const givenArray = ["banana", 10, "10", true, NaN]
+// givenArray.forEach((el) => {
+// 	if (givenArray.includes(10)) {
+// 		console.log(`Ось воно ${10}`)
+// 	} else {
+// 		console.log("Немає такого")
+// 	}
+// })
+
 
 // ====================================
 const buttonTogle = document.querySelector(".page__button")
