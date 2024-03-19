@@ -322,13 +322,13 @@ body {
 
 	&__wrap {
 		display: flex;
-		@include adaptiveValue("gap", 40, 15);
+		@include adaptiveValue("gap", 25, 1);
 		align-items: flex-end;
 		justify-content: center;
 		@include marginBottomNotLast(20, 15);
-		margin-right: toRem(15);
 	}
 	&__your-score {
+		margin-right: toRem(15);
 		display: flex;
 		align-items: center;
 		flex-wrap: wrap;
