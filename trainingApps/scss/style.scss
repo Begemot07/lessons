@@ -376,11 +376,12 @@ body {
 }
 .output {
 	font-size: toRem(20);
-	display: flex;
-	flex-wrap: wrap;
-	gap: rangeValue(20, 7);
-	justify-content: space-between;
-
+		@media (min-width: toEm(768.98)) {
+		display: flex;
+		flex-wrap: wrap;
+		gap: rangeValue(20, 7);
+		justify-content: space-between;
+	}
 	&__sum {
 	}
 	&__your-score {
