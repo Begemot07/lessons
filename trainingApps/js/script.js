@@ -32,10 +32,9 @@ myForm.addEventListener("submit", (event) => {
 	const outputKoeficient = document.querySelector(".output__koeficient")
 	const outputRepley = document.querySelector(".output__repley")
 
-	// outputSum.innerText = "Сума повторень: " + sum
-	outputSum.innerHTML = `Сума повторень: <span>${sum}</span>`
-	outputYourScore.innerHTML = `Сума повторень: <span>${yourScore}</span>`
-	outputBestScore.innerHTML = `Сума повторень: <span>${bestScore}</span>`
-	outputKoeficient.innerHTML = `Сума повторень: <span>${coefficient}</span>`
-	outputRepley.innerHTML = `Сума повторень: <span>${res}</span>`
+outputSum.innerHTML = `Сума повторень: <span>${sum}</span>`
+	outputYourScore.innerHTML = `Ваші очки за бій: <span>${yourScore}</span>`
+	outputBestScore.innerHTML = `Кращі очки за бій: <span>${bestScore}</span>`
+	outputKoeficient.innerHTML = `Коефіцієнт: <span>${coefficient}</span>`
+	outputRepley.innerHTML = `Кількість повторень: <span>${res}</span>`
 })
