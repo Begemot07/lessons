@@ -19,7 +19,7 @@ myForm.addEventListener("submit", (event) => {
 	let coefficient = 1 + Math.floor(Math.random() * (3 - 1 + 1))
 	let res = Math.ceil(((bestScore - yourScore) / 1000) * coefficient)
 
-	if (res < 20) res = 20
+	if (res < 20) res = 25
 	sum += res
 	if (sum >= goal) {
 		alert("Вітаю! Задача на сьогодні зроблена!")
