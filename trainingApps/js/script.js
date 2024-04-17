@@ -16,10 +16,10 @@ myForm.addEventListener("submit", (event) => {
 	const bestScore = formData.get("bestScore")
 	const goal = formData.get("goal")
 
-	let coefficient = 1 + Math.floor(Math.random() * (3 - 1 + 1))
+	let coefficient = 1 + Math.floor(Math.random() * (4))
 	let res = Math.ceil(((bestScore - yourScore) / 1000) * coefficient)
 
-	if (res < 20) res = 25
+	if (res < 20) res = 40
 	sum += res
 	if (sum >= goal) {
 		alert("Вітаю! Задача на сьогодні зроблена!")
@@ -37,4 +37,5 @@ myForm.addEventListener("submit", (event) => {
 	outputBestScore.innerHTML = `Кращі очки за бій: <strong></strong> <span>${bestScore}</span>`
 	outputKoeficient.innerHTML = `Коефіцієнт: <strong></strong> <span>${coefficient}</span>`
 	outputRepley.innerHTML = `Кількість повторень: <strong></strong> <span>${res}</span>`
+	outputRepley.innerHTML = `Кількість повторень присідань: <strong></strong> <span>${res/2}</span>`
 })
