@@ -27,6 +27,7 @@ myForm.addEventListener("submit", (event) => {
 	}
 
 	const outputSum = document.querySelector(".output__sum")
+	const outputSumSq = document.querySelector(".output__sum-sq")
 	const outputYourScore = document.querySelector(".output__your-score")
 	const outputBestScore = document.querySelector(".output__best-score")
 	const outputKoeficient = document.querySelector(".output__koeficient")
@@ -34,9 +35,10 @@ myForm.addEventListener("submit", (event) => {
 	const outputRepleySq = document.querySelector(".output__repley-sq")
 
 	outputSum.innerHTML = `Сума повторень: <strong></strong> <span>${sum}</span>`
+	outputSumSq.innerHTML = `Сума присідань: <strong></strong> <span>${sum/2}</span>`
 	outputYourScore.innerHTML = `Ваші очки за бій: <strong></strong> <span>${yourScore}</span>`
 	outputBestScore.innerHTML = `Кращі очки за бій: <strong></strong> <span>${bestScore}</span>`
 	outputKoeficient.innerHTML = `Коефіцієнт: <strong></strong> <span>${coefficient}</span>`
 	outputRepley.innerHTML = `Кількість повторень: <strong></strong> <span>${res}</span>`
-	outputRepleySq.innerHTML = `Кількість повторень присідань: <strong></strong> <span>${res/2}</span>`
+	outputRepleySq.innerHTML = `Кількість присідань: <strong></strong> <span>${res/2}</span>`
 })
