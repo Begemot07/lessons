@@ -31,6 +31,7 @@ myForm.addEventListener("submit", (event) => {
 	const outputBestScore = document.querySelector(".output__best-score")
 	const outputKoeficient = document.querySelector(".output__koeficient")
 	const outputRepley = document.querySelector(".output__repley")
+	const outputRepley = document.querySelector(".output__repley-sq")
 
 	outputSum.innerHTML = `Сума повторень: <strong></strong> <span>${sum}</span>`
 	outputYourScore.innerHTML = `Ваші очки за бій: <strong></strong> <span>${yourScore}</span>`
